@@ -1,0 +1,19 @@
+<%- include("partials/header"); -%>
+    <h1>Report A New Crime</h1>
+    <form action="/report" method="POST">
+        <div class="mb-3">
+            <label for="crimeType" class="form-label">Crime Type</label>
+            <input type="text" name="crimeType" class="form-control" id="crimeType" aria-describedby="crimeType">
+            <div id="emailHelp" class="form-text">Please enter the type of crime</div>
+        </div>
+        <div class="mb-3">
+            <label for="latitude" class="form-label">Latitude</label>
+            <input type="number" name="latitude" class="form-control" id="latitude" step="0.01">
+        </div>
+        <div class="mb-3">
+            <label for="longitude" class="form-label">Longitude</label>
+            <input type="number" name="longitude" class="form-control" id="longitude" step="0.01">
+        </div>
+        <button type="submit" class="btn btn-primary">Report Crime</button>
+    </form>
+    <%- include("partials/footer"); -%>
