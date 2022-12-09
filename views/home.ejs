@@ -1,3 +1,40 @@
 <%- include("partials/header"); -%>
-    <h1>Home</h1>
-    <%- include("partials/footer"); -%>
+<div class="home-god">
+  <div class="cards">
+    <div class="cards-sub">
+      <li class="cards__item">
+        <div class="card">
+          <div class="card__image card__image--fence"></div>
+          <div class="card__content">
+            <div class="card__title">Report A Crime</div>
+            <p class="card__text">
+              In ordinary language, a crime is an unlawful act punishable by a
+              state or other authority. The term crime does not, in modern
+              criminal law, have any simple and universally accepted definition,
+              though statutory definitions have been provided for certain
+              purposes.
+            </p>
+            <a href="/report"><button class="btn-new">Go</button></a>
+          </div>
+        </div>
+      </li>
+      <li class="cards__item">
+        <div class="card">
+          <div class="card__image card__image--river"></div>
+          <div class="card__content">
+            <div class="card__title">View Hotspots</div>
+            <p class="card__text">
+              A crime hot spot is generally defined as an area containing dense
+              clusters of criminal incidents. Identifications of hotspots helps
+              public safety institutions allocate resources for crime prevention
+              activities. This geographical analysis is usually made based on
+              crime pin maps of reported crime events over a certain period.
+            </p>
+            <a href="/hotspots"><button class="btn-new">Go</button></a>
+          </div>
+        </div>
+      </li>
+    </div>
+  </div>
+</div>
+<%- include("partials/footer"); -%>
